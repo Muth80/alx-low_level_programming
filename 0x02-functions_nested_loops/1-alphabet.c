@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
- * print_alphabet - Male the alphabet
+ * print_alphabet - Make the alphabet
  * Return: void
  */
 
