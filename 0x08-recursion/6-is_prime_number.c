@@ -34,4 +34,21 @@ int divisible(int a, int b)
 {
 	if (a % b == 0)
 		return (1);
+	return (0);
+}
 
+/**
+ * power - calculates a to the power of b
+ * @x: base
+ * @y: exponent
+ * Return: x to the power of y
+ */
+
+int power(int x, int y)
+{
+	int i, result = 1;
+
+	for (i = 0; i < y; i++)
+		result *= x;
+	return (result);
+}
