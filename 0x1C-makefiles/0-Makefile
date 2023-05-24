@@ -1,0 +1,16 @@
+#include "m.h"
+
+# Makefile for building the executable "school"
+
+# Rule for building the executable
+school: main.o school.o
+    gcc -o school main.o school.o
+
+# Rule for compiling main.c
+main.o: main.c m.h
+    gcc -c main.c
+
+# Rule for compiling school.c
+school.o: school.c m.h
+    gcc -c school.c
+
