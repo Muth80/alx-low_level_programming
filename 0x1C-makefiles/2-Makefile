@@ -1,0 +1,32 @@
+# Makefile for building the executable "school"
+
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Header file
+HEADER = m.h
+
+# Executable name
+NAME = school
+
+# Default rule
+all: $(NAME)
+
+# Rule for building the executable
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
+
+# Rule for compiling source files
+%.o: %.c $(HEADER)
+	$(CC) -c $<
+
+# Rule for cleaning the project (removing executable and object files)
+clean:
+	rm -f $(NAME) $(OBJ)
+
