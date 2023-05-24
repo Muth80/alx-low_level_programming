@@ -1,4 +1,6 @@
 #include "m.h"
+#include "school.c"
+#include "main.c"
 
 # Makefile for building the executable "school"
 
