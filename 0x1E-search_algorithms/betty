@@ -1,0 +1,5 @@
+near_skip.c ==========
+106-linear_skip.c:18: ERROR: parentheses are required on a return statement
+106-linear_skip.c:47: ERROR: parentheses are required on a return statement
+106-linear_skip.c:52: ERROR: parentheses are required on a return statement
+
